@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+
+{% block title %} Tebu Sehat | Sistem Prediksi Penyakit Tebu  {% endblock title%}
+
+{% block body%}
+    <!-- Details about website -->
+    <div class="container-xxl py-5" >
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience rounded text-light" style="background: rgb(16 52 19)" >
+                                <h1 class="display-1 text-light mb-0">50+</h1>
+                                <small class="fs-5 fw-bold">Penyakit tebu</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="/static/img/d1.png">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="/static/img/Red Rot.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="/static/img/leaf_rust.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <!-- <p class="section-title bg-white text-start text-primary pe-3">About Us</p> -->
+                    <h1 class="mb-4">Ketahui Tentang Penyakit Tebu</h1>
+                    <p class="mb-4"><a href="https://balittas-litbang-ppid.pertanian.go.id/doc/111/Laptah%202018.pdf" target="_blank">Lebih dari 50 penyakit dilaporkan pada tebu</a>, fungsi, bacteria,
+                        virus dan nematoda menyebabkan penyakit yang paling merusak. Semua penyakit ini berbahaya
+                        beberapa daerah, pada beberapa tahun dan pada beberapa bagian tanaman. Semua bagian tanaman mudah terserang penyakit dan
+                        satu atau lebih penyakit dapat terjadi pada hampir semua tanaman dan lahan.</p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="/static/img/service.png" alt="">
+                            <h5 class="mb-3">Layanan Khusus</h5>
+                            <span>Pendeteksi Penyakit Tebu</span>
+                            <span>Rekomendasi pengobatan</span>
+                            
+                        </div>
+                    </div>
+                    <a class="btn btn-outline-success rounded-pill py-3 px-5" href="/service">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h2 class="section-title bg-white text-center text-primary px-3">Penyakit</h2>
+                <br><br>
+                {% comment %} <h1 class="mb-5">Penyakit yang umum terjadi pada tebu</h1> {% endcomment %}
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/leaf_rust.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/leaf_rust.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(Leaf Rust) Karat Daun </h4>
+                            <p class="mb-4">Penyakit ini menyebabkan batang layu. Batang yang terserang menunjukkan daun mengering dari atas ke bawah.
+                                </p>
+                                <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='Leaf Rust' %}">
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/white_fly.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/white_fly.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(White Fly) Lalat Putih</h4>
+                            <p class="mb-4">Penyakit ini menyebabkan batang layu. Batang yang terserang menunjukkan daun mengering dari atas ke bawah. 
+                                </p>
+                                <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='White Fly' %}">
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/Red_Rust.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/Red_Rust.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(Red Rust) Karat Merah</h4>
+                            <p class="mb-4">Penyakit ini menyebabkan batang layu. Batang yang terserang menunjukkan daun mengering dari atas ke bawah. 
+                                </p>
+                                <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='Red Rust' %}">
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/Yellow Leaf Virus.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/Yellow Leaf Virus.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(Yellow Leaf Virus) Virus Daun Kuning</h4>
+                            <p class="mb-4">Penyakit ini menyebabkan batang layu. Batang yang terserang menunjukkan daun mengering dari atas ke bawah.
+                                </p>
+                                <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='Yellow Leaf Virus' %}">
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/leaf spot.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/leaf spot.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(Leaf Spot) Bintik Daun</h5>
+                            <p class="mb-4">Penyakit ini dapat ditandai pada daun sebagai lesi kecil, yang secara bertahap membesar di sepanjang bagian tengah tulang rusuk dan menghasilkan warna merah tua hingga coklat.</p>
+                            <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='Leaf Spot' %}">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/Red Rot.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/Red Rot.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(Red Rot) Busuk Merah</h5>
+                            <p class="mb-4">Penyakit ini pertama kali muncul sebagai lesi berwarna merah cerah di bagian tengah rusuk daun dan terlihat pada daun bagian atas yang terkulai dan berubah warna.</p>
+                            <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='Red Rot' %}">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-5 gx-4 mt-3 justify-content-md-center">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/mite insect.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/mite insect.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(Mite Insect) Serangga Tungau</h4>
+                            <p class="mb-4">Penyakit ini menyebabkan batang layu. Batang yang terserang menunjukkan daun mengering dari atas ke bawah. 
+                                </p>
+                                <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='Mite Insect' %}">
+                                    <i class="bi bi-chevron-double-right"></i>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="/static/img/Bacterial Blight.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="/static/img/Bacterial Blight.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">(Bacterial Blight) Penyakit Hawar Bakteri</h5>
+                            <p class="mb-4">Bintik-bintik pada daun mahkota muda menunjukkan pola tertentu berupa bercak-bercak berwarna hijau tua dan hijau muda berselang-seling dengan ukuran bervariasi dan sejajar dengan pelepah daun.</p>
+                            <a class="btn btn-success rounded-circle" target="_blank" href="{% url 'disease_details' disease='Bacterial Blight' %}">
+                                <i class="bi bi-chevron-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+{%endblock body%}

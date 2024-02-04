@@ -1,0 +1,8 @@
+django
+opencv-python
+django-cors-headers
+tensorflow
+scikit-learn
+django-widget-tweaks
+numpy==1.21.2
+rembg==1.0.0
