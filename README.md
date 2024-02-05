@@ -6,7 +6,7 @@
 
 ## About
 
-Welcome to Tebu Sehat, an innovative solution addressing the challenges posed by sugarcane diseases in Pakistan's sugar industry. Our application, SweetCare, empowers farmers through cutting-edge machine learning techniques, specifically image processing and deep learning using Convolutional Neural Networks (CNN).
+Welcome to Tebu Sehat, an innovative solution addressing the challenges posed by sugarcane diseases in ponorogo sugar industry. Our application, SweetCare, empowers farmers through cutting-edge machine learning techniques, specifically image processing and deep learning using Convolutional Neural Networks (CNN).
 
 ### Key Features 🚀
 
